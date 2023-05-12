@@ -10,8 +10,8 @@
 </head>
 <body>
     <?php
-    $dia = 26;
-    $mes = 10;
+    $dia = 27;
+    $mes = 1;
 
     switch($mes){
         case 1:
@@ -19,8 +19,10 @@
         case 3:
             if($mes == 3 and $dia >= 20){
                 echo "<p>Outono<p>";
+                echo "<img src='imgoutono.jpg'>";
             }else{
                 echo "<p>Verão</p>";
+                echo "<img src='imgverão.jpg'>";
             }
             break;
         case 4:
@@ -28,8 +30,10 @@
         case 6:
             if($mes == 6 and $dia >= 21){
                 echo "<p>Inverno</p>";
+                echo "<img src='imginverno.jpg'>";
             }else{
                 echo "<p>Outono</p>";
+                echo "<img src='imgoutono.jpg'>";
             }
             break;
         case 7:
@@ -37,8 +41,11 @@
         case 9:
             if($mes == 9 and $dia >= 23){
                 echo "<p>Primaveira</p>";
+                echo "<img src='imgprimavera.jpg'>";
             }else{
                 echo "<p>Inverno</p>";
+                echo "<img src='imginverno.jpg'>";
+                
             }
             break;
         case 10:
@@ -48,12 +55,6 @@
                 echo "<p>Verão</p>";
             }else{
                 echo "<p>Primaveira</p>";
-            }
-            break;
-        
-        case 13:
-            if($mes > 13){
-                echo "<p>Informe o mês corretamente</p>";
             }
             break;
         }
