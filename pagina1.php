@@ -8,8 +8,18 @@
 </head>
 <body>
     <?php
+    //Declaração de variáveis
+    $hora  = date("H"); $op;
 
-    echo "<p>Boa tarde à todos</p>"
+    //
+    if($hora < 12){
+        echo "<p> " .$hora. "hs. Bom dia</p>";
+    } else if($hora < 18){
+        echo "<p> " .$hora. "hr. Boa tarde</p>";
+    } else {
+        echo "<p> " .$hora. "hr Boa noite</?p>";
+    }
+
     ?>
 </body>
 </html>
