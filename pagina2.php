@@ -53,8 +53,10 @@
         case 12:
             if($mes == 12 and $dia >= 22){
                 echo "<p>Verão</p>";
+                echo "<img src='imgverão.jpg'>";
             }else{
                 echo "<p>Primaveira</p>";
+                echo "<img src='imgprimavera.jpg'>";
             }
             break;
         }
